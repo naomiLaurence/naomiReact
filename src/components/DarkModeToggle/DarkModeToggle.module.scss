@@ -1,0 +1,29 @@
+.toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &.dark {
+        color: #80deea; // צבע האייקון במצב כהה (תכלת כהה)
+        background-color: #004d80; // צבע הרקע במצב כהה (כחול כהה)
+    }
+
+    &.light {
+        color: #004d80; // צבע האייקון במצב אור (כחול כהה)
+        background-color: #80deea; // צבע הרקע במצב אור (תכלת כהה)
+    }
+
+    &:hover {
+        background-color: #006994; // צבע רקע בהיר יותר במצב hover (כחול בינוני)
+        color: #ffffff; // צבע האייקון במצב hover
+    }
+}

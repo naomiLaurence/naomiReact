@@ -1,0 +1,39 @@
+.cards-container {
+    width: 80%;
+    margin: auto;
+    /* Align center */
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap items */
+    justify-content: center;
+    /* Align items center */
+}
+
+.full-cards {
+    width: calc(25% - 2em);
+    /* 25% width with margin */
+    margin: 1em;
+    color: aliceblue;
+    background-color: #121435a4;
+}
+
+.img-home {
+    width: 100%;
+    height: 48vh;
+    object-fit: cover;
+    margin: 1em;
+}
+
+@media (max-width: 768px) {
+    .full-cards {
+        width: calc(50% - 2em);
+        /* 50% width with margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .full-cards {
+        width: calc(100% - 2em);
+        /* Full width with margin */
+    }
+}
